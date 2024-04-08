@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job-Finder Emi' Office</title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="mainWrapper">
+        <div id="searchWrapper">
+            <h1>Job-Finder Emi's Office</h1>
+            <nav id="searchMenu">
+                <form action="">
+                    <label for="location">Location</label>
+                    <input type="text" name="location" id="location" placeholder="Enter location...">
+                    <label for="jobDescription">Job Description</label>
+                    <input type="text" name="jobDescription" id="jobDescription" placeholder="Enter job description...">
+                    <button type="button" onclick="findMyJob()">Find me a Job!</button>
+                    <button type="button" onclick="resetJobs()">Reset Table</button>
+                </form>
+            </nav>
+        </div>
+        <div id="contentWrapper">
+            <main>
+                <table>
+                    <colgroup>
+                        <col class="thirty">
+                        <col class="seventy">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Job Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
